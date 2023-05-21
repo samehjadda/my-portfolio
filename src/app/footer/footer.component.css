@@ -1,0 +1,31 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .content div a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+  .content div h4 {
+    margin-bottom: 10px;
+  }
+  .content div p,
+  .content div a {
+    margin-bottom: 5px;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+  }
+  
