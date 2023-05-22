@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');header {
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #000;
+  color: #FB2576;
   margin: 0 auto;
-  padding-right: 40px;
-  padding-left: 40px;
+  font-size: 18px;
 }
 
 header .logo {
