@@ -68,3 +68,15 @@ header nav ul li a:hover::after {
     margin-bottom: 10px;
   }
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
+    animation: fadeIn 1s ease-in-out;
+  }

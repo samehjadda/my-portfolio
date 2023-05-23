@@ -10,4 +10,43 @@
   body {
     animation: fadeIn 1s ease-in-out;
   }
-  
+  .resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.resume h2 {
+    font-size: 2em;
+    color: rgb(188, 187, 187);
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.resume h3 {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.resume h4 {
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.resume p, .resume ul {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.resume ul {
+    padding-left: 20px;
+}
+
+.resume li {
+    margin-bottom: 10px;
+}

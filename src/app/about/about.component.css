@@ -10,4 +10,37 @@
   body {
     animation: fadeIn 1s ease-in-out;
   }
-  
+  .about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-me h2, .about-me h3 {
+    color: #333;
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-me h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
