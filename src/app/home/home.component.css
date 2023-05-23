@@ -1,38 +1,32 @@
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
-  
-  body {
-    animation: fadeIn 1s ease-in-out;
+  to {
+    opacity: 1;
   }
-  .home-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
 }
 
-.home-container h1 {
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 20px;
+* {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+  
+  .home-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-container p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #fff;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    line-height: 0.5;
+    margin-bottom: 50px;
 }
 
-  
-/* CSS */
 a {
   appearance: none;
   background-color: transparent;
@@ -74,4 +68,61 @@ a:hover {
 a:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  padding-top: 70px;
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 6rem;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 #FB2576, 2px -3px 0 white;
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 #FB2576, -2px 3px 0 white;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 #FB2576, 2px -3px 0 white;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 #FB2576, -2px 3px 0 white;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
+img{
+  max-width: 450px;
 }

@@ -1,3 +1,16 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  animation: fadeIn 1s ease-in-out;
+}
+
 .footer {
   background-color: #000;
   display: flex;
@@ -11,7 +24,7 @@
 .content {
   display: flex;
   justify-content: space-between;
-  color: #FB2576;
+  color: #fb2576;
 }
 .content div a {
   display: flex;
@@ -20,33 +33,17 @@
 
 .content div h4 {
   margin-bottom: 10px;
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
 }
 .content div p,
 .content div a {
   margin-bottom: 5px;
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 300;
 }
 
 .content div a:hover {
   font-weight: 600;
-  transition: font-weight 0.3s ease;
 }
 .copyright {
   font-size: 14px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-body {
-  animation: fadeIn 1s ease-in-out;
 }
