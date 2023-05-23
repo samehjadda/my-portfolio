@@ -16,3 +16,24 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header .logo {
+    margin-bottom: 20px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+}

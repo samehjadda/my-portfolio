@@ -1,36 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  color: #FB2576;
+  color: #fb2576;
   margin: 0 auto;
   font-size: 18px;
   max-width: 1400px;
-
 }
 
 header .logo {
   font-size: 14px;
-  font-family: 'Rajdhani', sans-serif;}
+}
 
 header nav ul {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 header nav ul li {
   margin-left: 60px;
-  position: relative;
 }
 
 header nav ul li a {
   position: relative;
   overflow: hidden;
-  padding: 3px 0;  /* Adding padding to provide space for underline */
+  padding: 3px 0;
 }
 
 header nav ul li a::after {
@@ -48,27 +44,6 @@ header nav ul li a::after {
 
 header nav ul li a:hover::after {
   transform: scaleX(1);
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  header .logo {
-    margin-bottom: 20px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-  }
-
-  header nav ul li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
 }
 
 @keyframes fadeIn {

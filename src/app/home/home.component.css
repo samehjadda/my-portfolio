@@ -125,4 +125,6 @@ a:active {
 
 img{
   max-width: 450px;
+  padding-top: 25px;
+  padding-right: 30px;
 }
