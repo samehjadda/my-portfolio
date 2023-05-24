@@ -11,17 +11,16 @@
   animation: fadeIn 0.5s ease-in-out;
 }
 
-input[type="submit"] {
+.send {
   appearance: none;
   background-color: transparent;
-  border: 2px solid #FB2576;
-  border-radius: 15px;
+  border: 1px solid #FB2576;
+  border-radius: 2px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: normal;
   margin: 0;
@@ -38,18 +37,99 @@ input[type="submit"] {
   will-change: transform;
 }
 
-input[type="submit"]:disabled {
+.send:disabled {
   pointer-events: none;
 }
 
-input[type="submit"]:hover {
+.send:hover {
   color: #fff;
   background-color: #FB2576;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-input[type="submit"]:active {
+.send:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+.screen-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.screen-body-item {
+  text-align: right;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 6rem;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  width: 76px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+input, textarea {
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid #999898;
+  color: #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border-color .2s;
+}
+textarea{
+  padding-bottom: 130px;
+  margin-bottom: 50px;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: #ffffff;
+  font-weight: 300;
+
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
 }

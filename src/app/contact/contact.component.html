@@ -1,17 +1,22 @@
-<form action="https://formspree.io/f/mgebbedk" method="POST">
-    <input type="hidden" name="_next" value="http://localhost:4200/">
-    <label>
-      Name:
-      <input type="text" name="name" required>
-    </label>
-    <label>
-      Email:
-      <input type="email" name="_replyto" required>
-    </label>
-    <label>
-      Message:
-      <textarea name="message" required></textarea>
-    </label>
-    <input type="submit" value="Send">
-  </form>
-  
+<form
+  class="screen-body"
+  action="https://formspree.io/f/mgebbedk"
+  method="POST"
+>
+  <div class="screen-body-item left">
+    <div class="app-title">
+      <span>CONTACT</span>
+      <span>Me</span>
+    </div>
+  </div>
+  <div class="screen-body-item">
+    <input placeholder="Name" type="text" name="name" required autocomplete="chrome-off" />
+
+    <input placeholder="E-mail" type="email" name="_replyto" required />
+
+    <textarea placeholder="Message" name="message" required data-gramm_editor="false"></textarea>
+    <span class="space"></span>
+
+    <input class="send" type="submit" value="Send" />
+  </div>
+</form>
