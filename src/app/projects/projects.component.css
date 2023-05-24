@@ -10,3 +10,81 @@
 * {
   animation: fadeIn 0.5s ease-in-out;
 }
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+.card {
+  outline: white solid 0.5px ;
+  width: 24rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-primary-white);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+
+.card h2 {
+  position: absolute;
+  margin: 0;
+  bottom: 30px;
+  left: 30px;
+  transition: bottom 0.3s 0.3s ease-out;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.card p, .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.card p {
+  bottom: 80px;
+  left: 30px;
+}
+
+.card a {
+  bottom: 40px;
+  left: 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover h2 {
+  bottom: 220px;
+  left: 30px;
+  transition: bottom 0.3s ease-out;
+  color: #fb2576;
+}
+
+.card:hover p, .card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
