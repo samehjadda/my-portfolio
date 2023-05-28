@@ -19,3 +19,14 @@ h2{
   font-size: 28px;
   text-transform: uppercase;
  }
+
+ li{
+  font-weight: 600;
+  padding-bottom: 4px;
+ }
+ 
+ .date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
