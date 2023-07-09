@@ -9,20 +9,24 @@
 
 * {
   animation: fadeIn 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+body, html{
+  margin: 0;
+  padding: 0;
 }
 
 .home-container {
   padding: 80px 0;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 180px;
 }
 
 .home-container p {
   font-size: 1.3em;
   color: #fff;
-  line-height: 0.5;
-  margin-bottom: 50px;
+  line-height: 1.5; /* updated from 0.5*/
+  margin-bottom: 20px; /* updated from 50px */
 }
 
 a {
@@ -133,4 +137,37 @@ a:active {
 img {
   max-width: 450px;
   padding-top: 20px;
+}
+@media (max-width: 760px) {
+  html{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  img{
+    max-width: 50%;
+    display: none;
+ }
+  .home-container {
+    padding: 1% 0;
+  }
+  
+  .home-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .stack span{
+    padding: 10px 0;
+    font-size: 45px;
+  }
+  a{
+    font-size: 12px;
+    border-radius: 0;
+    margin-top: 5%;
+    padding: 8px 18px;
+    min-height: auto;
+  }
 }
